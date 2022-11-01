@@ -3,6 +3,8 @@
 실행이 되지않는다면 https://ndb796.tistory.com/22?category=950781 여기서 jar 파일을 다운로드후
 이클립스에서 multigame project 우클릭 > buildpath > configure build path > Libraries > Classpath > Add external jars > jl1.0.1.jar 파일 등록하고 apply 해주면된다
 이게 자바에서 사운드를 실행하게 해준다고한다.
+오셀로에서 이미지경로를 설정할때 상대경로가 되지않아 절대경로로 해두었다.
+오셀로를 실행하려면 whitestar.png와 blackstar.png의 경로를 변경해주어야한다.
 
 Main에서 각각의 버튼을 통해 게임클래스들을 불러오도록 구현했다.
 
@@ -16,6 +18,7 @@ tic tac toe 게임 - 보통 3줄로하며, 1줄에 o 나 x로 채우면 이기�
 src > game >game.java 에서 47라인에 주석을 해제하고 124라인으로가서 pressS~L까지 if주석들을 해제한다
 다시 실행해서 음악에 맞추어서 자신이 비트를 찍으면 콘솔창에 시간이랑 누른버튼이 나타난다.
 그러고나서 시간계산을 잘해서 230라인에 new Beat(시간,버튼)을 하나씩 찍으면된다. 코드1개당 비트1개이다.
+
 
 추가사항은 오목에 바둑돌 그림을 추가하는것과 리듬게임에 점수출력하는 부분이 남았다.
 
